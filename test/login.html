@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تسجيل الدخول</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+<header class="clean-header">
+  <div class="header-container">
+    <h1 class="site-name">سوق الخدمات</h1>
+    <a href="index.php" class="back-home">الرئيسية</a>
+  </div>
+</header>
+
+
+
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="register.php" method="POST">
+			<h1>انشئ حساب</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>او استخدم ايميلك للتسجيل</span>
+			<input type="text" placeholder="الاسم" name="username" required />
+			<input type="email" placeholder="الايميل" name="email" required />
+			<input type="password" placeholder="كلمة المرور" name="password" required />
+			<button type="submit">اصنع الحساب</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="login.php" method="POST">
+			<h1>سجل الدخول</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>او اسستخدم حسابك</span>
+			<input type="email" placeholder="ايميل" name="email" required />
+			<input type="password" placeholder="كلمة المرور" name="password" required />
+			<a href="#">نسيت كلمة المرور؟</a>
+			<button type="submit">سجل الدخول</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>مرحبًا بعودتك</h1>
+				<p>لتكمل تجربتك, سجل دخولك مجددا</p>
+				<button class="ghost" id="signIn">سجل دخول</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>مرحبًا</h1>
+				<p>ادخل معلوماتك لتبدأ رحلتك معنا!</p>
+				<button class="ghost" id="signUp">اصنع حساب</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<p>&copy; 2025 Bahaa Swilem. All rights reserved.</p>
+</footer>
+  <script src="login.js"></script>
+</body>
+</html>
