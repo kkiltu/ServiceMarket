@@ -10,14 +10,14 @@ $service_id = $_POST['service_id'];
 $rating = $_POST['rating'];
 $comment = $_POST['comment'] ?? "";
 
-// الحصول على user_id
+
 $stmtUser = $pdo->prepare("SELECT id FROM users WHERE username = ?");
 $stmtUser->execute([$_SESSION['username']]);
 $user = $stmtUser->fetch(PDO::FETCH_ASSOC);
 
 $user_id = $user['id'];
 
-// إدخال التقييم
+
 $stmt = $pdo->prepare("
     INSERT INTO reviews (service_id, user_id, rating, comment)
     VALUES (?, ?, ?, ?)

@@ -15,7 +15,7 @@ if (!$category) {
     die("تصنيف غير صالح.");
 }
 
-// جلب كل الخدمات المرتبطة بالتصنيف
+// جلب بيانات الخدمة
 $stmt2 = $pdo->prepare("
     SELECT services.*, users.username 
     FROM services

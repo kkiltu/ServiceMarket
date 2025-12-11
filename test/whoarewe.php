@@ -12,7 +12,6 @@ include __DIR__ . "/header.php"; ?>
 </head>
 <body>
 
-<!-- SECTION 1 – HERO -->
 <section class="hero">
     <img src="images/who-hero.jpg" alt="About Us">
     <div class="hero-text">
@@ -21,7 +20,7 @@ include __DIR__ . "/header.php"; ?>
     </div>
 </section>
 
-<!-- SECTION 2 – TEAM -->
+
 <section class="team-section">
     <h2 class="section-title">فريق احترافي متكامل</h2>
     <p class="section-sub">فريقنا من الخبراء ملتزم بتقديم أفضل الخدمات.</p>
@@ -53,7 +52,7 @@ include __DIR__ . "/header.php"; ?>
     </div>
 </section>
 
-<!-- SECTION 3 – VERTICAL FEATURED BLOCKS -->
+
 <section class="vertical-features">
 
     <div class="feature">
@@ -82,7 +81,7 @@ include __DIR__ . "/header.php"; ?>
 
 </section>
 
-<!-- SECTION 4 – JOURNEY -->
+
 <section class="journey">
     <h2 class="section-title">رحلة انطلاقنا</h2>
     <p class="section-sub">منصة سوق الخدمات بدأت بفكرة بسيطة لتسهيل الوصول إلى الخدمات.</p>

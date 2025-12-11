@@ -12,7 +12,7 @@ session_start();
     <link rel="stylesheet" href="contact.css">
 </head>
 
-<!-- SECTION 1: HERO WITH OVERLAY -->
+<!-- SECTION 1: HERO  -->
 <section class="contact-hero">
     <img src="images/contact-hero.jpg" alt="contact hero" class="hero-img">
 

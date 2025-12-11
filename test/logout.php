@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-// مسح بيانات الجلسة
+
 $_SESSION = array();
 
-// حذف الكوكيز الخاصة بالجلسة
+
 if (ini_get("session.use_cookies")) {
     $params = session_get_cookie_params();
     setcookie(session_name(), '', time() - 42000,
@@ -13,10 +13,10 @@ if (ini_get("session.use_cookies")) {
     );
 }
 
-// تدمير الجلسة
+
 session_destroy();
 
-// إعادة التوجيه للصفحة الرئيسية (PHP)
+
 header('Location: index.php');
 exit();
 ?>

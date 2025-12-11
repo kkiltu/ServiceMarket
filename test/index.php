@@ -15,7 +15,7 @@ session_start();
 
   <?php include 'header.php'; ?>
 
-  <!-- قسم الصورة الكبيرة -->
+
   <section class="hero">
     <img src="images/hero-img.jpg" alt="خدمات" class="hero-img">
     <div class="hero-text">
@@ -25,7 +25,7 @@ session_start();
     </div>
   </section>
 
-  <!-- قسم خدماتنا -->
+
   <section class="services-section">
     <h2>خدماتنا المتنوعة</h2>
     <p class="sub-text">نحن نقدم مجموعة واسعة من الخدمات التي تلبي احتياجات كافة العملاء.</p>
@@ -51,7 +51,7 @@ session_start();
     </div>
   </section>
 
-  <!-- آراء العملاء -->
+
   <section class="reviews">
     <h2>آراء عملائنا الكرام</h2>
     <p class="sub-text">نحن نعتز بتقييمات عملائنا ونستخدمها لتحسين خدماتنا باستمرار.</p>
@@ -77,7 +77,7 @@ session_start();
     </div>
   </section>
 
-  <!-- لماذا تختار خدماتنا -->
+
   <section class="features">
     <h2>لماذا تختار خدماتنا؟</h2>
     <p class="sub-text">نحن نقدم مجموعة من المميزات التي تجعل تجربتك معنا فريدة ومميزة.</p>
@@ -107,7 +107,7 @@ session_start();
     </div>
   </section>
 
-  <!-- تواصل معنا -->
+
   <section class="contact">
     <h2>تواصل معنا</h2>
     <p class="sub-text">فريق الدعم لدينا جاهز للإجابة على استفساراتك ومساعدتك في جميع احتياجاتك.</p>

@@ -1,5 +1,5 @@
 /* ============================= */
-/* HERO SECTION – الصورة بالنص  */
+/*         HERO SECTION          */
 /* ============================= */
 
 .contact-hero {
@@ -18,7 +18,6 @@
     object-fit: cover;
 }
 
-/* الطبقة السوداء الشفافة */
 .contact-hero .overlay {
     position: absolute;
     top: 0;
@@ -29,7 +28,6 @@
     z-index: 1;
 }
 
-/* النص بالنص + الفورم */
 .contact-hero .hero-text {
     position: absolute;
     z-index: 2;
@@ -40,7 +38,7 @@
     transform: translate(-50%, -50%);
 }
 
-/* العنوان والصغيرة */
+
 .contact-hero .hero-text h1 {
     font-size: 42px;
     margin-bottom: 10px;
@@ -51,7 +49,7 @@
     margin-bottom: 20px;
 }
 
-/* الفورم بالنص */
+
 .newsletter {
     display: flex;
     flex-direction: column;
@@ -74,13 +72,13 @@
 }
 
 /* ============================= */
-/* CONTACT SECTION – تحت الهيرو */
+/*       CONTACT SECTION         */
 /* ============================= */
 
 .contact-section {
     width: 100%;
     display: flex;
-    justify-content: center;     /* center whole block */
+    justify-content: center;    
     align-items: flex-start;
     padding: 60px 20px;
 }
@@ -89,7 +87,7 @@
     display: flex;
     width: 80%;
     max-width: 1100px;
-    gap: 40px;                   /* reduce distance between form and info */
+    gap: 40px;                   
     justify-content: center;
 }
 

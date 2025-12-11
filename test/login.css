@@ -49,9 +49,9 @@
   color: #fff;
 }
 
-/* ---------- Dark Mode ---------- */
+
 .dark-mode .clean-header {
-    background: rgba(26, 26, 26, 0.85); /* خلفية داكنة وشفافة للـ Header */
+    background: rgba(26, 26, 26, 0.85); 
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -67,8 +67,7 @@
     color: #fff;
 }
 
-/* Dark Mode for Login Form Container */
-/* إذا كان الـ container له خلفية بيضاء يجب تغييرها */
+
 .dark-mode .container {
     background: #1e1e1e;
     box-shadow: 0 14px 28px rgba(255, 255, 255, 0.1), 0 10px 10px rgba(255, 255, 255, 0.05);

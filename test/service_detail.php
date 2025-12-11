@@ -3,10 +3,8 @@ session_start();
 include __DIR__ . '/db_config.php';
 include __DIR__ . '/header.php';
 
-// جلب ID الخدمة
 $service_id = $_GET['id'] ?? 0;
 
-// جلب بيانات الخدمة + المستخدم
 $stmt = $pdo->prepare("
     SELECT services.*, users.username 
     FROM services 
@@ -20,12 +18,12 @@ if (!$service) {
     die("الخدمة غير موجودة.");
 }
 
-// جلب الصور
+
 $imgStmt = $pdo->prepare("SELECT * FROM service_images WHERE service_id = ?");
 $imgStmt->execute([$service_id]);
 $images = $imgStmt->fetchAll(PDO::FETCH_ASSOC);
 
-// جلب التقييمات
+
 $reviewStmt = $pdo->prepare("
     SELECT reviews.*, users.username 
     FROM reviews 
@@ -57,7 +55,6 @@ $totalReviews = $ratingData['total_reviews'];
 
 <div class="service-container">
 
-    <!-- LEFT: IMAGE CAROUSEL -->
     <div class="image-gallery">
 
     <div class="main-image">
@@ -75,7 +72,7 @@ $totalReviews = $ratingData['total_reviews'];
 </div>
 
 
-    <!-- RIGHT: SERVICE DETAILS -->
+    <!-- SERVICE DETAILS -->
     <div class="service-info-box">
         <h1><?php echo $service['name']; ?></h1>
 
