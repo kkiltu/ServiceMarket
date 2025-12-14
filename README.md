@@ -1,108 +1,167 @@
--Introduction
+# Service Market
 
-Service Market is a website designed to connect service providers with users who are looking for reliable, high-quality services. The system functions as a digital marketplace where individuals can browse service categories, view detailed descriptions, compare options, read user reviews, and submit service requests.
-The primary objective of this project is to streamline communication between providers and clients and to create a unified environment that supports transparency, trust, and ease of use.
+## Introduction
 
--Project Objectives
+Service Market is a web-based platform designed to connect service providers with users seeking reliable, high-quality services. It operates as a digital marketplace where users can browse service categories, view detailed service descriptions, compare available options, read reviews, and submit service requests.
 
-The main goals of Service Market are:
-•	To offer a centralized platform that organizes diverse types of services.
-•	To make it easy for customers to discover, evaluate, and request services.
-•	To give service providers a dedicated space to publish their offerings.
-•	To support user authentication, posting, rating, and reviewing services.
-•	To ensure an intuitive and modern user experience with clean UI design.
+The primary objective of the project is to streamline communication between service providers and clients while offering a unified, transparent, and user-friendly environment.
 
--System Features
+---
 
-1. User Authentication
-Users can create an account, log in, and manage their activities.
-Registered users gain access to:
-•	Posting new services
-•	Leaving reviews and ratings
-•	Accessing personalized features
-Session management ensures that the platform dynamically changes navigation options (e.g., Login → Username / Logout Link).
-2. Service Categories
-Services are organized into predefined categories (such as carpentry, plumbing, technical services, tutoring, painting, and more).
-Each category has:
-•	A unique slug for SEO-friendly routing
-•	A dedicated page displaying all services under that category
-•	A dynamic layout powered by database queries
+## Project Objectives
 
-Administrators or authenticated users can add services to any category via an interactive popup form.
-3. Service Pages
-Each service has a dedicated detail page including:
-•	Service name
-•	Description
-•	High-quality header image
-•	Information about the user who posted it
-•	A structured review section
-•	Overall rating based on submitted reviews
+The main goals of **Service Market** are:
 
-4. Review System
-A built-in evaluation system allows authenticated users to leave:
-•	A star rating (1–5)
-•	Written comments
-•	Timestamped feedback
-The service detail page calculates:
-•	Average rating
-•	Total number of reviews
-This feature significantly improves trust and transparency between service providers and clients.
-5. Contact System
-The platform includes a fully functional contact page where users can:
-•	Subscribe to the website’s newsletter
-•	Send direct messages to the support team
-•	Access official contact information (email, phone)
-All submitted data is safely stored in the database for administrative review.
-6. Responsive User Interface
-The entire platform is designed using:
-•	HTML
-•	CSS
-•	JavaScript
-•	PHP
-•	MySQL 
-The UI focuses on:
-•	Clean layouts
-•	Consistent typography
-•	Balanced spacing
-•	Fast navigation
-•	Modern card-based design
+* Provide a centralized platform that organizes diverse types of services.
+* Enable customers to easily discover, evaluate, and request services.
+* Offer service providers a dedicated space to publish and manage their offerings.
+* Support user authentication, service posting, ratings, and reviews.
+* Deliver a modern, intuitive user experience with a clean and consistent UI.
 
--System Architecture
-The platform follows a structured and modular architecture:
+---
 
-1. Front-End
-•	HTML templates for each page
-•	Modular CSS with shared styling across components
-•	JavaScript for interactive features (popups, forms, dynamic navbar)
-2. Back-End
-•	PHP for server-side logic
-•	PDO for secure database access
-•	Session-based user authentication
-•	Routing logic driven by category slug and service ID
-3. Database
-The MySQL database includes essential tables such as:
-•	users
-•	services
-•	categories
-•	reviews
-•	newsletter_subscribers
-•	contact_messages
-Foreign key relationships ensure data integrity.
+## System Features
 
--Security Considerations
-To enhance safety and stability:
-•	Passwords stored using secure hashing
-•	Validation for all user-submitted data
-•	Protection against SQL injection via prepared statements
-•	Controlled access—only logged-in users can add services or reviews
--Conclusion
-Service Market successfully provides a complete digital ecosystem that connects users with trusted service providers.
-With its polished UI, scalable architecture, and integrated review system, the platform delivers a professional, user-friendly experience suitable for real-world deployment(almost).
-Future improvements may include:
-•	Messaging system between providers and clients
-•	Better UI and usage for spaces in the page
-•	Better management for users on their posts
-•	Mobile app integration
-•	Admin dashboard for analytics and service moderation
-The project demonstrates full-stack development capabilities and a clear understanding of modern web design principles.
-________________________________________
+### 1. User Authentication
+
+Users can register, log in, and manage their activities securely. Authenticated users can:
+
+* Post new services
+* Leave ratings and written reviews
+* Access personalized features
+
+Session management dynamically updates the navigation bar (e.g., Login → Username / Logout).
+
+---
+
+### 2. Service Categories
+
+Services are organized into predefined categories such as carpentry, plumbing, technical services, tutoring, painting, and more.
+
+Each category includes:
+
+* A unique SEO-friendly slug
+* A dedicated category page listing all related services
+* Dynamic content generated from database queries
+
+Authorized users can add services to categories using an interactive popup form.
+
+---
+
+### 3. Service Pages
+
+Each service has a dedicated detail page displaying:
+
+* Service name and description
+* High-quality header image
+* Information about the service provider
+* Review and rating section
+* Overall rating calculated from user feedback
+
+---
+
+### 4. Review System
+
+The platform includes an integrated review system allowing authenticated users to submit:
+
+* Star ratings (1–5)
+* Written comments
+* Timestamped feedback
+
+Each service page automatically calculates:
+
+* Average rating
+* Total number of reviews
+
+This system enhances transparency and builds trust between users and providers.
+
+---
+
+### 5. Contact System
+
+The contact module enables users to:
+
+* Subscribe to the newsletter
+* Send messages to the support team
+* Access official contact information (email and phone)
+
+All submitted data is securely stored in the database for administrative review.
+
+---
+
+### 6. Responsive User Interface
+
+The platform is built using:
+
+* HTML
+* CSS
+* JavaScript
+* PHP
+* MySQL
+
+The UI design emphasizes:
+
+* Clean layouts
+* Consistent typography
+* Balanced spacing
+* Fast and intuitive navigation
+* Modern card-based components
+
+---
+
+## System Architecture
+
+### Front-End
+
+* HTML templates for all pages
+* Modular and reusable CSS styles
+* JavaScript for interactive features (popups, forms, dynamic navigation)
+
+### Back-End
+
+* PHP for server-side logic
+* PDO for secure database interactions
+* Session-based authentication system
+* Dynamic routing using category slugs and service IDs
+
+### Database
+
+The MySQL database includes the following core tables:
+
+* `users`
+* `services`
+* `categories`
+* `reviews`
+* `newsletter_subscribers`
+* `contact_messages`
+
+Foreign key relationships are used to maintain data integrity.
+
+---
+
+## Security Considerations
+
+To ensure system security and reliability:
+
+* Passwords are stored using secure hashing algorithms
+* All user inputs are validated and sanitized
+* SQL injection is prevented using prepared statements
+* Restricted actions (posting services, reviews) are limited to authenticated users
+
+---
+
+## Conclusion
+
+Service Market delivers a complete digital ecosystem that connects users with trusted service providers. With a polished user interface, scalable architecture, and an integrated review system, the platform offers a professional and practical solution suitable for near real-world deployment.
+
+### Future Enhancements
+
+Planned improvements include:
+
+* Direct messaging between service providers and clients
+* Enhanced UI spacing and usability refinements
+* Advanced service and post management for users
+* Mobile application integration
+* Admin dashboard for analytics and content moderation
+
+This project demonstrates solid full-stack development skills and a strong understanding of modern web application design principles.
