@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: "Tahoma", sans-serif;
+    direction: rtl;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0,0,0,0.45);
+    padding: 20px 40px;
+    border-radius: 12px;
+}
+
+.hero-text h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.hero-text p {
+    margin: 10px 0 0;
+    font-size: 20px;
+}
+
+/* TEAM SECTION */
+.team-section {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.section-sub {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.team-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: #f5f5f5;
+    width: 30%;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.team-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-text {
+    padding: 20px;
+}
+
+/* VERTICAL FEATURES */
+.vertical-features {
+    padding: 60px 5%;
+}
+
+.feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    background: #fafafa;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.feature img {
+    width: 40%;
+    border-radius: 12px;
+}
+
+.feature-text {
+    width: 55%;
+}
+
+.feature-text h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* JOURNEY */
+.journey {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.journey-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.journey-card {
+    width: 30%;
+    background: #f5f5f5;
+    padding-bottom: 20px;
+    border-radius: 12px;
+}
+
+.journey-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}

@@ -1,0 +1,97 @@
+/* hero section */
+.hero-services {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+.hero-services .hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-services .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #000;
+}
+.hero-services .hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.hero-services .hero-text p {
+  font-size: 20px;
+}
+
+/* services list */
+.services-list {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 20px;
+}
+.service-item {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+.service-item img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.service-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.service-text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* service request form */
+.service-request {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+.service-request h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.service-request p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.service-request form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.service-request input,
+.service-request textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.service-request button {
+  padding: 12px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.service-request button:hover {
+  background-color: #0056b3;
+}

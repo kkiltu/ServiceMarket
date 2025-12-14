@@ -1,0 +1,158 @@
+/* ============================= */
+/*         HERO SECTION          */
+/* ============================= */
+
+.contact-hero {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-hero img.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+    z-index: 1;
+}
+
+.contact-hero .hero-text {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.contact-hero .hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.contact-hero .hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.newsletter input,
+.newsletter button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+.newsletter button {
+    background: #f39c12;
+    color: white;
+    cursor: pointer;
+}
+
+/* ============================= */
+/*       CONTACT SECTION         */
+/* ============================= */
+
+.contact-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+    align-items: flex-start;
+    padding: 60px 20px;
+}
+
+.contact-wrapper {
+    display: flex;
+    width: 80%;
+    max-width: 1100px;
+    gap: 40px;                   
+    justify-content: center;
+}
+
+/* LEFT SIDE — TEXT + FORM */
+.left {
+    flex: 1;
+}
+
+.left h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.left p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* FORM */
+.contact-form {
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 14px;
+    background: #3498db;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/* RIGHT SIDE — CONTACT INFO */
+.right {
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Info Items */
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+}
+
+/* SVG Icons */
+.info-box svg {
+    width: 28px;
+    height: 28px;
+    fill: #3498db;
+}
